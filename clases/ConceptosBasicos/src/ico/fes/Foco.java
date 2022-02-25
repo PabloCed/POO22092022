@@ -46,6 +46,10 @@ public class Foco {
         this.tipo = tipo;
     }
 
+     @Override
+    public String toString() {
+        return "Foco{" + "color=" + color + ", tipo=" + tipo + ", tamano=" + tamano + '}';
+    }  
 
 
 }
