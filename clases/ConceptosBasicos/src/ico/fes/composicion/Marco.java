@@ -2,33 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ico.fes;
-
-import java.awt.Color;
+package ico.fes.composicion;
 
 /**
  *
  * @author PC
  */
-public class Silla {
+public class Marco {
 
+    private String marca;
     private String material;
-    private Color color;
 
-    public Silla() {
+    public Marco() {
     }
 
-    public Silla(String material, Color color) {
+    public Marco(String marca, String material) {
+        this.marca = marca;
         this.material = material;
-        this.color = color;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
     }
 
     public String getMaterial() {
@@ -39,4 +29,16 @@ public class Silla {
         this.material = material;
     }
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    @Override
+    public String toString() {
+        return "Marco{" + "marca=" + marca + ", material=" + material + '}';
+    }
 }
