@@ -51,4 +51,10 @@ private int grupo;
     public String toString() {
         return super.toString()+"Alumno{" + "numeroCuenta=" + numeroCuenta + ", carrera=" + carrera + ", grupo=" + grupo + '}';
     }
+
+
+
+
+
+
  }
