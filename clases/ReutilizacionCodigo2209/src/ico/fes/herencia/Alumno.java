@@ -52,4 +52,21 @@ public void estudiar(int cantidad){
     System.out.println(this.getNombre() + "Está estudiando" + cantidad + "Hrs.");
 
 }
+@Override// polimorfismo por sobre escritura
+public void dormir (){
+    System.out.println("El estudiante " + this.getNombre() + " está durmiendo 5 hrs.......");
+
+
+}
+//Polimorfismo por sobre carga
+
+public void dormir(int horasEstudio){
+int horasDormir= 8;
+    System.out.println(this.getNombre() + " está durmiendo " + (horasDormir - horasEstudio) + " horas");
+
+
+}
+
+
+
 }
