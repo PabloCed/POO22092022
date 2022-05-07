@@ -5,6 +5,9 @@
 package javabasico2209parte2;
 
 import ico.fes.Aritmetica;
+import ico.fes.Circulo;
+import ico.fes.Cuadrado;
+import ico.fes.herencia.EstudianteDeportistaArtista;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -20,7 +23,7 @@ public class JavaBasico2209Parte2 {
      */
     public static void main(String[] args) {
         /* EXCEPCIONES
-//| < >
+//| < >  ' '
          */
 
         ArrayList<String> nombres = new ArrayList<>();
@@ -72,8 +75,30 @@ public class JavaBasico2209Parte2 {
         }
 
         System.out.println("Fin del programa");
-
+        System.out.println("   ");
 //nunca permitir que un programa termine de forma abrupta 
-    }
+    
+
+
+        System.out.println("--------------Hecho en clase del 3 de mayo del 2022------------");
+        System.out.println(" ");
+        Cuadrado cuad = new Cuadrado(5.0f);
+        Circulo circ = new Circulo(4.5f);
+        System.out.println("El area del cuadrado es: " +cuad.calcularArea() );
+        System.out.println("El area del circulo es: " + circ.calcularArea());
+        System.out.println("");
+        System.out.println("Estudiante deportista y artista:");
+
+
+        EstudianteDeportistaArtista eda = new EstudianteDeportistaArtista();
+eda.setNombre("Diana");
+eda.setCarrera("ICO");
+eda.setDisciplinaDeportiva("Futbol");
+eda.setGeneroArtistico("Fotografía, Estampa, dibujo");
+eda.comer();
+eda.ensayar();
+eda.entrenar();
+        System.out.println(eda);
+}
 
 }

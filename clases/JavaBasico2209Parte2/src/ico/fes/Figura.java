@@ -9,6 +9,17 @@ package ico.fes;
  * @author PC
  */
 public interface Figura {
+
+public static final float PI=3.1416f;
+public static final int CUADRADO=2;
+public static final int CIRCULO=3;
+public static final int TRIANGULO=4;
+public static final int RECTANGULO=5;
+
+
+
+
+
     public abstract float calcularArea();
 
 
