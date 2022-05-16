@@ -71,14 +71,7 @@ public class CifradoCesar extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
 
-                /*           
-               int suma;
-                String variable = llave.getText() + cuadro.getText();
-
-                suma = Integer.parseInt(llave.getText()) + 20;
-                cifrado.setText(String.valueOf(suma) + cuadro.getText());
-
-                 */
+              
                 final String ALPHMAY = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
                 final String ALPHMIN = "abcdefghijklmnñopqrstuvwxyz";
 
@@ -90,7 +83,7 @@ public class CifradoCesar extends JFrame {
                 for (int pos = 0; pos < mensaje.length(); pos++) {
                     char actual = mensaje.charAt(pos);
 
-                    // if (esMayuscula(actual)) {
+               
                     if (actual >= 'A' && actual <= 'Z' || actual == 'Ñ') {
                         int posActual = ALPHMAY.indexOf(actual + "");
                         posActual = posActual + desp;
