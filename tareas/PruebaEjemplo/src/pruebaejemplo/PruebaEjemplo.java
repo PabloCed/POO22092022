@@ -1,5 +1,3 @@
-
-
 package pruebaejemplo;
 
 public class PruebaEjemplo {
@@ -19,13 +17,11 @@ public class PruebaEjemplo {
 
         for (Cuentahabitante cuentahabitante : lista) {
             System.out.println(cuentahabitante.evaluarNivelCliente());
+            System.out.println("nombre del cliente " + cuentahabitante.getNombre());
+            System.out.println(cuentahabitante.getIdCliente());
+            System.out.println(cuentahabitante.getBalance());
+            System.out.println(" ");
+
         }
-
-
-
-
     }
-
-
-
 }
