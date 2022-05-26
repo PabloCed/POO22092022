@@ -38,7 +38,7 @@ public class Persona {
     }
 @Override
 public String toString(){
-return "Presona{" + "nombre=" + nombre + ", edad=" + edad + '}';
+return nombre + "," + edad;
 
 }
 public void comer (){

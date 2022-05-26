@@ -49,8 +49,8 @@ public class VentanaVersion2 extends Frame {
                 System.out.println("Coordenadas x=" + e.getX());
                 System.out.println("Coordenadas y=" + e.getY());
                 System.out.println("Boton presionado:" + e.getButton());
-
-            }
+           
+ }
 
         });
         this.addWindowListener(new WindowAdapter() {
